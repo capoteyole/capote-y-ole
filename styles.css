@@ -1,60 +1,83 @@
 body {
-  font-family: 'Lato', sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #fff9f5;
-  color: #2d2d2d;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5dc; /* bež */
+  color: #b00020; /* Ferrari crvena */
+  text-align: center;
 }
+
 header {
-  background-color: #8c1f1f;
-  color: white;
-  padding: 1em 2em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 40px 20px 20px;
 }
-header img {
-  height: 60px;
+
+.logo {
+  max-width: 200px;
 }
-nav a {
-  margin: 0 1em;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-.hero {
-  background: url('images/interior.jpg') center/cover no-repeat;
-  height: 60vh;
+
+nav ul {
+  list-style: none;
+  padding: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: white;
-  text-shadow: 2px 2px 5px #000;
-  font-family: 'Playfair Display', serif;
-  text-align: center;
+  gap: 30px;
 }
-.hero h1 {
-  font-size: 3em;
-}
-.section {
-  padding: 3em 2em;
-  max-width: 1000px;
-  margin: auto;
-}
-.cta {
-  text-align: center;
-  margin: 2em 0;
-}
-.cta a {
-  background-color: #8c1f1f;
-  color: white;
-  padding: 1em 2em;
+
+nav ul li a {
   text-decoration: none;
-  border-radius: 8px;
   font-weight: bold;
+  font-size: 18px;
+  color: #b00020;
+  transition: color 0.3s;
 }
-footer {
-  background-color: #f0e5de;
-  padding: 2em;
+
+nav ul li a:hover {
+  color: black;
+}
+
+h1 {
+  margin-top: 30px;
+  font-size: 32px;
+}
+
+.description {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+figure {
   text-align: center;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.full-width {
+  width: 90%;
+  margin: 20px auto;
+  display: block;
+}
+
+.contact {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.8;
 }
